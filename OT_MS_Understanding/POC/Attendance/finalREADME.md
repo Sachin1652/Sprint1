@@ -1,5 +1,7 @@
 <h1 align="center">Attendance API</h1>
 
+![attendance-api-logo](https://github.com/user-attachments/assets/93d54bb2-e54f-4ac0-9ca5-89cede578f12)
+
 
 ## Document Details
 
@@ -96,6 +98,7 @@ The Attendance API follows a layered microservice architecture. Incoming HTTP re
 
 <!-- Add Architecture Diagram Screenshot here -->
 >  **Screenshot:** Architecture Diagram
+<img width="1904" height="576" alt="attendance" src="https://github.com/user-attachments/assets/a1de97eb-3209-4366-a6fa-7b026834b035" />
 
 ---
 
