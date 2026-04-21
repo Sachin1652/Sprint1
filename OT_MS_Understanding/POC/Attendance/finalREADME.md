@@ -1,5 +1,4 @@
-
-# Attendance API
+<h1 align="center">Attendance API</h1>
 
 
 ## Document Details
