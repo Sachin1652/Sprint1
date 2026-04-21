@@ -1,7 +1,5 @@
 <h1 align="center">Attendance API</h1>
 
-![attendance-api-logo](https://github.com/user-attachments/assets/93d54bb2-e54f-4ac0-9ca5-89cede578f12)
-
 
 ## Document Details
 
