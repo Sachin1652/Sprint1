@@ -1,7 +1,7 @@
 
 # Attendance API
 
----
+
 ## Document Details
 
 | Author | Created | Version | Last Updated By | Last Edited On | L0 Reviewer | L1 Reviewer | L2 Reviewer |
