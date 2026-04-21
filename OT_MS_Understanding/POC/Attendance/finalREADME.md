@@ -206,7 +206,7 @@ source ~/.bashrc
 # Verify
 liquibase --version
 ```
-
+<img width="1919" height="1041" alt="4" src="https://github.com/user-attachments/assets/b1a50261-2daf-4b90-b08b-92b64cd24c0d" />
 ---
 
 ### Step 7: Clone Repository
@@ -215,7 +215,6 @@ liquibase --version
 git clone https://github.com/OT-MICROSERVICES/attendance-api.git
 cd attendance-api
 ```
-<img width="1919" height="1041" alt="4" src="https://github.com/user-attachments/assets/b1a50261-2daf-4b90-b08b-92b64cd24c0d" />
 
 ---
 
