@@ -15,6 +15,24 @@
    - [Runtime Dependencies](#23-runtime-dependencies)
 3. [Important Ports](#3-important-ports)
 4. [Architecture](#4-architecture)
+5. [Step by step Setup](#5-step-by-step-setup)
+   - [Step 1: Update System](#step-1-update-system)
+   - [Step 2: Install Python](#step-2-install-python-311)
+   - [Step 3: Install Poetry](#step-3-install-poetry)
+   - [Step 4: Install PostgreSQL](#step-4-install-postgresql)
+     - [Create Database & User](#create-database--user)
+   - [Step 5: Install Redis](#step-5-install-redis-optional)
+   - [Step 6: Install Liquibase](#step-6-install-liquibase)
+   - [Step 7: Clone Repository](#step-7-clone-repository)
+   - [Step 8: Configure Application](#step-8-configure-application)
+   - [Step 9: Install Dependencies](#step-9-install-dependencies)
+   - [Step 10: Run Database Migrations](#step-9-install-dependencies)
+   - [Step 10: Run Database Migrations](#step-10-run-database-migrations)
+   - [Step 11: Start the Application](#step-11-start-the-application)
+   - [Step 12: Verify](#step-12-verify)
+6. [Troubleshooting](#6-troubleshooting)
+7. [Contact](#7-contact)
+8. [References](#8-references)
 
 ## 1. Purpose
 
@@ -78,7 +96,7 @@ The Attendance API follows a layered microservice architecture. Incoming HTTP re
 
 ---
 
-## Step-by-step Setup
+## 5. Step by step Setup
 
 ### Step 1: Update System
 
@@ -270,7 +288,7 @@ http://<server-ip>:8080/apidocs
 # 9
 ---
 
-## Troubleshooting
+## 6. Troubleshooting
 
 | Issue | Fix |
 |-------|-----|
@@ -281,7 +299,7 @@ http://<server-ip>:8080/apidocs
 
 ---
 
-## Contact
+## 7. Contact
 
 | Name | Email Address |
 | ------------- | ------------- |
@@ -291,7 +309,7 @@ Samajh gaya 👍 — tum chahte ho niche wale references ko **same table format*
 
 ---
 
-## References
+## 8. References
 
 | Resource Name             | Link                                                                                                     |
 | ------------------------- | -------------------------------------------------------------------------------------------------------- |
