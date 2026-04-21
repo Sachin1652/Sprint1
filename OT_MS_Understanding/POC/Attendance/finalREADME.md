@@ -265,6 +265,7 @@ changeLogFile=migration/db.changelog-master.xml
 
 
 Then run:
+
 For building the application, we can use `make` command with our [Makefile](https://github.com/OT-MICROSERVICES/attendance-api/blob/5bca9615b6a5e478271687c43c0d55cf084f195b/Makefile).
 ```bash
 make run-migrations
