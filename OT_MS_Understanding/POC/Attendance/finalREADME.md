@@ -104,7 +104,8 @@ The Attendance API follows a layered microservice architecture. Incoming HTTP re
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y git make curl wget software-properties-common
 ```
-# 1
+<img width="1920" height="1048" alt="1" src="https://github.com/user-attachments/assets/d6fb51c6-cf79-49a9-b0cd-d3976f779615" />
+
 ---
 
 ### Step 2: Install Python 3.11
@@ -133,7 +134,8 @@ source ~/.bashrc
 # Verify
 poetry --version
 ```
-# 2
+<img width="1919" height="119" alt="2" src="https://github.com/user-attachments/assets/af06fccd-776e-48f3-9a65-1c3d1b83e047" />
+
 ---
 
 ### Step 4: Install PostgreSQL
@@ -146,7 +148,8 @@ sudo systemctl enable postgresql
 # Verify
 sudo systemctl status postgresql
 ```
-# 3
+<img width="1919" height="1041" alt="3" src="https://github.com/user-attachments/assets/9fad5993-afb1-4c5f-8538-7a630a07b755" />
+
 
 #### Create Database & User
 
@@ -208,7 +211,8 @@ liquibase --version
 git clone https://github.com/OT-MICROSERVICES/attendance-api.git
 cd attendance-api
 ```
-# 4
+<img width="1919" height="1041" alt="4" src="https://github.com/user-attachments/assets/b1a50261-2daf-4b90-b08b-92b64cd24c0d" />
+
 ---
 
 ### Step 8: Configure Application
@@ -240,7 +244,8 @@ redis:
 ```bash
 poetry add pyyaml@latest
 ```
-# 5
+<img width="1919" height="849" alt="5" src="https://github.com/user-attachments/assets/9bfa1f79-51ea-4759-a0ff-3e853533fa4f" />
+
 ---
 
 ### Step 10: Run Database Migrations
@@ -261,7 +266,8 @@ Then run:
 ```bash
 make run-migrations
 ```
-# 6
+<img width="1919" height="712" alt="6" src="https://github.com/user-attachments/assets/4ed1b506-65e3-4758-8d51-ad69e9e0ec48" />
+
 ---
 
 ### Step 11: Start the Application
@@ -269,7 +275,8 @@ make run-migrations
 ```bash
 poetry run gunicorn app:app --log-config log.conf -b 0.0.0.0:8080
 ```
-# 7
+<img width="1919" height="518" alt="7" src="https://github.com/user-attachments/assets/d8d532e7-d024-427c-b7f6-e13e34e146fb" />
+
 
 ---
 
@@ -279,13 +286,15 @@ poetry run gunicorn app:app --log-config log.conf -b 0.0.0.0:8080
 # Health check
 curl http://localhost:8080/api/v1/attendance/health/detail
 ```
-# 8
+<img width="1919" height="83" alt="8" src="https://github.com/user-attachments/assets/450e791e-329d-481e-9aaf-b9aab645ac1c" />
+
 
 Swagger UI:
 ```
 http://<server-ip>:8080/apidocs
 ```
-# 9
+<img width="1919" height="1005" alt="9" src="https://github.com/user-attachments/assets/95de87db-624c-48a1-94f4-a6b25cb5ccb9" />
+
 ---
 
 ## 6. Troubleshooting
@@ -304,8 +313,6 @@ http://<server-ip>:8080/apidocs
 | Name | Email Address |
 | ------------- | ------------- |
 | Sachin Rajput | [sachin.rajput.snaatak@mygurukulam.co](mailto:sachin.rajput.snaatak@mygurukulam.co) |
-
-Samajh gaya 👍 — tum chahte ho niche wale references ko **same table format** me convert karna (jaise upar wala hai). Ye raha clean format 👇
 
 ---
 
