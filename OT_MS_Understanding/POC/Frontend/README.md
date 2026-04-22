@@ -12,15 +12,15 @@
 ## Table of Contents
 
 - [Purpose](#1-purpose)
-- [System Requirements](#3-system-requirements)
-- [Dependencies](#4-dependencies)
-  - [Build Time Dependency](#41-build-time-dependency)
-  - [Run Time Dependency](#42-run-time-dependency)
-  - [Other Dependency](#43-other-dependency)
-- [Important Ports](#5-important-ports)
-- [Architecture](#6-architecture)
-- [Dataflow Diagram](#7-dataflow-diagram)
-- [Step-by-step Installation](#8-step-by-step-installation)
+- [System Requirements](#2-system-requirements)
+- [Dependencies](#3-dependencies)
+  - [Build Time Dependency](#31-build-time-dependency)
+  - [Run Time Dependency](#32-run-time-dependency)
+  - [Other Dependency](#33-other-dependency)
+- [Important Ports](#4-important-ports)
+- [Architecture](#5-architecture)
+- [Dataflow Diagram](#6-dataflow-diagram)
+- [Step-by-step Installation](#7-step-by-step-installation)
   - [Update System Packages](#step-1-update-system-packages)
   - [Install Required Tools](#step-2-install-required-tools)
   - [Install Node.js](#step-3-install-nodejs-lts)
@@ -32,9 +32,9 @@
   - [Configure Nginx](#step-9-configure-nginx)
   - [Test and Restart Nginx](#step-10-test-and-restart-nginx)
   - [Verify Application](#step-11-verify-application-in-browser)
-- [Troubleshooting](#10-troubleshooting)
-- [Contact](#11-contact)
-- [References](#12-references)
+- [Troubleshooting](#8-troubleshooting)
+- [Contact](#9-contact)
+- [References](#10-references)
 
 ---
 
@@ -44,13 +44,7 @@ Frontend Web is the main UI of the OT-Microservices stack. It is a **ReactJS** b
 
 ---
 
-## 2. Pre-requisites
-
-Before starting the deployment, make sure the following Hardware, Software, and Security requirements are fulfilled.
-
----
-
-## 3. System Requirements
+## 2. System Requirements
 
 | Hardware Specifications | Minimum Recommendation |
 |------------------------|----------------------|
@@ -61,9 +55,9 @@ Before starting the deployment, make sure the following Hardware, Software, and 
 
 ---
 
-## 4. Dependencies
+## 3. Dependencies
 
-### 4.1 Build Time Dependency
+### 3.1 Build Time Dependency
 
 | Name | Version | Description |
 |------|---------|-------------|
@@ -73,14 +67,14 @@ Before starting the deployment, make sure the following Hardware, Software, and 
 | git | latest | Required to clone the repository |
 | curl | latest | Required to download Node.js setup script |
 
-### 4.2 Run Time Dependency
+### 3.2 Run Time Dependency
 
 | Name | Version | Description |
 |------|---------|-------------|
 | Node.js | 18.x (LTS) | Required to serve the application |
 | Nginx | 1.24.x | Web server used to serve static React build files and act as reverse proxy |
 
-### 4.3 Other Dependency
+### 3.3 Other Dependency
 
 | Name | Version | Description |
 |------|---------|-------------|
@@ -91,7 +85,7 @@ Before starting the deployment, make sure the following Hardware, Software, and 
 
 ---
 
-## 5. Important Ports
+## 4. Important Ports
 
 | Inbound Traffic | Description |
 |----------------|-------------|
@@ -107,19 +101,19 @@ Before starting the deployment, make sure the following Hardware, Software, and 
 
 ---
 
-## 6. Architecture
+## 5. Architecture
 
 # frontend
 
 ---
 
-## 7. Dataflow Diagram
+## 6. Dataflow Diagram
 
 # dataflow
 
 ---
 
-## 8. Step-by-step Installation
+## 7. Step-by-step Installation
 
 ### Step 1: Update System Packages
 
@@ -299,7 +293,7 @@ http://<your-server-ip>
 
 ---
 
-## 10. Troubleshooting
+## 8. Troubleshooting
 
 ### Issue 1: Build Fails Due to Memory / OpenSSL Error
 
@@ -347,7 +341,7 @@ npm --version     # Should be v9.x
 
 ---
 
-## 11. Contact
+## 9. Contact
 
 | Name | Email Address |
 | ------------- | ------------- |
@@ -355,7 +349,7 @@ npm --version     # Should be v9.x
 
 ---
 
-## 12. References
+## 10. References
 
 | Links | Description |
 |-------|-------------|
