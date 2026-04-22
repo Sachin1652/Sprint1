@@ -12,7 +12,6 @@
 ## Table of Contents
 
 - [Purpose](#1-purpose)
-- [Pre-requisites](#2-pre-requisites)
 - [System Requirements](#3-system-requirements)
 - [Dependencies](#4-dependencies)
   - [Build Time Dependency](#41-build-time-dependency)
