@@ -1,5 +1,5 @@
-# Frontend - POC 
----
+<h1 align="center">Frontend - POC </h1>
+
 ## Document Details
 
 | Author | Created | Version | Last Updated By | Last Edited On | L0 Reviewer | L1 Reviewer | L2 Reviewer |
@@ -11,38 +11,47 @@
 
 ## Table of Contents
 
-- [Purpose](#purpose)
-- [Pre-requisites](#pre-requisites)
-- [System Requirements](#system-requirements)
-- [Dependencies](#dependencies)
-- [Important Ports](#important-ports)
-- [Architecture](#architecture)
-- [Dataflow Diagram](#dataflow-diagram)
-- [Step-by-step Installation](#step-by-step-installation)
-- [Monitoring](#monitoring)
-- [Logging](#logging)
-- [Disaster Recovery](#disaster-recovery)
-- [High Availability](#high-availability)
-- [Troubleshooting](#troubleshooting)
-- [FAQs](#faqs)
-- [Contact Information](#contact-information)
-- [References](#references)
+- [Purpose](#1-purpose)
+- [Pre-requisites](#2-pre-requisites)
+- [System Requirements](#3-system-requirements)
+- [Dependencies](#4-dependencies)
+  - [Build Time Dependency](#41-build-time-dependency)
+  - [Run Time Dependency](#42-run-time-dependency)
+  - [Other Dependency](#43-other-dependency)
+- [Important Ports](#5-important-ports)
+- [Architecture](#6-architecture)
+- [Dataflow Diagram](#7-dataflow-diagram)
+- [Step-by-step Installation](#8-step-by-step-installation)
+  - [Update System Packages](#step-1-update-system-packages)
+  - [Install Required Tools](#step-2-install-required-tools)
+  - [Install Node.js](#step-3-install-nodejs-lts)
+  - [Clone the Repository](#step-4-clone-the-repository)
+  - [Install Node Dependencies](#step-5-install-node-dependencies)
+  - [Production Build](#step-6-generate-production-build)
+  - [Install Nginx](#step-7-install-nginx)
+  - [Copy Build to Nginx Directory](#step-8-copy-build-files-to-nginx-directory)
+  - [Configure Nginx](#step-9-configure-nginx)
+  - [Test and Restart Nginx](#step-10-test-and-restart-nginx)
+  - [Verify Application](#step-11-verify-application-in-browser)
+- [Troubleshooting](#10-troubleshooting)
+- [Contact](#11-contact)
+- [References](#12-references)
 
 ---
 
-## Purpose
+## 1. Purpose
 
 Frontend Web is the main UI of the OT-Microservices stack. It is a **ReactJS** based application that provides a web interface for employee management. The application is cross-platform and only requires a JavaScript runtime (Node.js) to run. It serves as a single point of access for all microservices — Attendance, Employee, Salary, and Notification APIs.
 
 ---
 
-## Pre-requisites
+## 2. Pre-requisites
 
 Before starting the deployment, make sure the following Hardware, Software, and Security requirements are fulfilled.
 
 ---
 
-## System Requirements
+## 3. System Requirements
 
 | Hardware Specifications | Minimum Recommendation |
 |------------------------|----------------------|
@@ -53,9 +62,9 @@ Before starting the deployment, make sure the following Hardware, Software, and 
 
 ---
 
-## Dependencies
+## 4. Dependencies
 
-### Build Time Dependency
+### 4.1 Build Time Dependency
 
 | Name | Version | Description |
 |------|---------|-------------|
@@ -65,14 +74,14 @@ Before starting the deployment, make sure the following Hardware, Software, and 
 | git | latest | Required to clone the repository |
 | curl | latest | Required to download Node.js setup script |
 
-### Run Time Dependency
+### 4.2 Run Time Dependency
 
 | Name | Version | Description |
 |------|---------|-------------|
 | Node.js | 18.x (LTS) | Required to serve the application |
 | Nginx | 1.24.x | Web server used to serve static React build files and act as reverse proxy |
 
-### Other Dependency
+### 4.3 Other Dependency
 
 | Name | Version | Description |
 |------|---------|-------------|
@@ -83,7 +92,7 @@ Before starting the deployment, make sure the following Hardware, Software, and 
 
 ---
 
-## Important Ports
+## 5. Important Ports
 
 | Inbound Traffic | Description |
 |----------------|-------------|
@@ -99,19 +108,19 @@ Before starting the deployment, make sure the following Hardware, Software, and 
 
 ---
 
-## Architecture
+## 6. Architecture
 
 # frontend
 
 ---
 
-## Dataflow Diagram
+## 7. Dataflow Diagram
 
 # dataflow
 
 ---
 
-## Step-by-step Installation
+## 8. Step-by-step Installation
 
 ### Step 1: Update System Packages
 
@@ -133,7 +142,7 @@ sudo apt install curl git make -y
 
 ---
 
-### Step 3: Install Node.js 18.x (LTS)
+### Step 3: Install Node.js (LTS)
 
 ```bash
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
@@ -230,34 +239,8 @@ sudo cp -r build/* /var/www/html/
 ### Step 9: Configure Nginx
 
 ```bash
-### Step 7: Generate Production Build
-
-```bash
-npm run build
-```
-
-> **[Add Screenshot Here — should show "Compiled successfully"]**
-
-```bash
-ls -la build/
-```
-
-> **[Add Screenshot Here]**
-
----
-
-### Step 8: Install Nginx
-
-```bash
-sudo apt install nginx -y
-```
-
-> **[Add Screenshot Here]**
-
-
 sudo nano /etc/nginx/sites-available/default
 ```
-
 Replace existing content with:
 
 ```nginx
@@ -317,7 +300,7 @@ http://<your-server-ip>
 
 ---
 
-## Troubleshooting
+## 10. Troubleshooting
 
 ### Issue 1: Build Fails Due to Memory / OpenSSL Error
 
@@ -365,7 +348,7 @@ npm --version     # Should be v9.x
 
 ---
 
-## 7. Contact
+## 11. Contact
 
 | Name | Email Address |
 | ------------- | ------------- |
@@ -373,7 +356,7 @@ npm --version     # Should be v9.x
 
 ---
 
-## References
+## 12. References
 
 | Links | Description |
 |-------|-------------|
