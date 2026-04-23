@@ -1,14 +1,13 @@
 ![image](https://github.com/user-attachments/assets/f33c8016-8886-4ede-b5c5-559d5576f454)
 
 
-# Identifying DevOps Repositories
+## Document Details
 
-| Author        | Date       | Version | Review Level   | Reviewer Name        | 
-|---------------|------------|---------|----------------|----------------------|
-| Anitha Annem  | April 27   | v1.0   | Pre-Reviewer   | Priyanshu            |
-| Anitha Annem  |    |     | L0             | Khushi Malhothra      |
-| Anitha Annem  |            |         | L1             | Rishabh Sharma       |
-| Anitha Annem  |            |         | L2             | piyush Upadhyay      |
+| Author | Created | Version | Last Edited On | L0 Reviewer | L1 Reviewer | L2 Reviewer |
+| --- | --- | --- | --- | --- | --- | --- |
+| Your Name | 2026-04-23 | 1.0 | 2026-04-23 | Anitha Annem | Shreya Jaiswal | Ashwani Singh |
+
+
 
 ## Table of Contents
 
