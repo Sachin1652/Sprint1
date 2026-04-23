@@ -1,10 +1,17 @@
-<h1 align="center">Frontend - POC </h1>
+<h1 align="center">Frontend API </h1>
+
+<p align="center">
+  <img 
+    src="https://raw.githubusercontent.com/OT-MICROSERVICES/frontend/0515d20bc9a18ab0df520e9b6aad04a2794ef448/static/frontend-logo.svg" 
+    width="350"
+  />
+</p>
 
 ## Document Details
 
-| Author | Created | Version | Last Updated By | Last Edited On | L0 Reviewer | L1 Reviewer | L2 Reviewer |
-| -------------- | ---------- | ------- | --------------- | -------------- | ----------- | ----------- | ----------- |
-| Sachin Rajput | 2026-04-22 | 1.0 | Sachin Rajput | 2026-04-22 | Anitha Annem | Shreya Jaiswal | Ashwani Singh |
+| Author | Created | Version | Last Edited On | L0 Reviewer | L1 Reviewer | L2 Reviewer |
+| -------------- | ---------- | ------- | -------------- | ----------- | ----------- | ----------- |
+| Sachin Rajput | 2026-04-22 | 1.0 | 2026-04-22 | Anitha Annem | Shreya Jaiswal | Ashwani Singh |
 
 
 ---
@@ -61,8 +68,8 @@ Frontend Web is the main UI of the OT-Microservices stack. It is a **ReactJS** b
 
 | Name | Version | Description |
 |------|---------|-------------|
-| Node.js | 18.x (LTS) | JavaScript runtime required to build the React application |
-| npm | 9.x | Node package manager used to install all project dependencies |
+| Node.js | 18.20.8 (LTS) | JavaScript runtime required to build the React application |
+| npm | 10.8.2 | Node package manager used to install all project dependencies |
 | make | latest | Used to run predefined build commands from Makefile |
 | git | latest | Required to clone the repository |
 | curl | latest | Required to download Node.js setup script |
@@ -71,17 +78,17 @@ Frontend Web is the main UI of the OT-Microservices stack. It is a **ReactJS** b
 
 | Name | Version | Description |
 |------|---------|-------------|
-| Node.js | 18.x (LTS) | Required to serve the application |
-| Nginx | 1.24.x | Web server used to serve static React build files and act as reverse proxy |
+| Node.js | 18.20.8 (LTS) | Required to serve the application |
+| Nginx | 1.24.0 | Web server used to serve static React build files and act as reverse proxy |
 
 ### 3.3 Other Dependency
 
-| Name | Version | Description |
+| Name | POC Link | Description |
 |------|---------|-------------|
-| Employee API | latest | Provides employee data consumed by the frontend |
-| Attendance API | latest | Provides attendance data consumed by the frontend |
-| Salary API | latest | Provides salary data consumed by the frontend |
-| Notification API | latest | Provides notification data consumed by the frontend |
+| Employee API | [Employee](https://github.com/Snaatak-Cloud-Cartel/Documentations/blob/0632547adb40c2b027178f1ad23c7e82a87f1e6b/OT_MS_Understanding/POC/Employee/README.md)  | Provides employee data consumed by the frontend |
+| Attendance API | [Attendance](https://github.com/Snaatak-Cloud-Cartel/Documentations/blob/f52749d8323cc6a179e65af14cc5ae13f2c4801a/OT_MS_Understanding/POC/Attendance/README.md) | Provides attendance data consumed by the frontend |
+| Salary API | [Salary]() | Provides salary data consumed by the frontend |
+| Notification API | [Notification]() | Provides notification data consumed by the frontend |
 
 ---
 
@@ -103,13 +110,13 @@ Frontend Web is the main UI of the OT-Microservices stack. It is a **ReactJS** b
 
 ## 5. Architecture
 
-# frontend
+<img width="2912" height="1156" alt="frontend" src="https://github.com/user-attachments/assets/a19bfe10-620f-45ce-a700-141bb4cc7232" />
 
 ---
 
 ## 6. Dataflow Diagram
 
-# dataflow
+<img width="1536" height="1024" alt="Dataflow" src="https://github.com/user-attachments/assets/257941c9-728a-4eb9-ba65-4f7ef312969f" />
 
 ---
 
@@ -120,8 +127,8 @@ Frontend Web is the main UI of the OT-Microservices stack. It is a **ReactJS** b
 ```bash
 sudo apt update && sudo apt upgrade -y
 ```
+<img width="1919" height="957" alt="image" src="https://github.com/user-attachments/assets/2a96b28f-a204-4de2-86dd-5795ab8bebd4" />
 
-> **[Add Screenshot Here]**
 
 ---
 
@@ -130,8 +137,7 @@ sudo apt update && sudo apt upgrade -y
 ```bash
 sudo apt install curl git make -y
 ```
-
-> **[Add Screenshot Here]**
+<img width="1919" height="951" alt="image" src="https://github.com/user-attachments/assets/310ca451-fc93-4593-9093-b09a8b2b0001" />
 
 ---
 
@@ -140,14 +146,16 @@ sudo apt install curl git make -y
 ```bash
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 ```
+<img width="1919" height="753" alt="image" src="https://github.com/user-attachments/assets/88c5d7f4-971d-48e7-8dd8-fb868d52f88c" />
+<img width="1919" height="330" alt="image" src="https://github.com/user-attachments/assets/e238cfaa-bd06-48d5-877a-fea5cb9efd9b" />
 
-> **[Add Screenshot Here]**
+
 
 ```bash
 sudo apt install -y nodejs
 ```
+<img width="1919" height="949" alt="image" src="https://github.com/user-attachments/assets/70aadc6b-298d-4d21-bd88-1d2324bcd2bc" />
 
-> **[Add Screenshot Here]**
 
 Verify installation:
 
@@ -155,8 +163,7 @@ Verify installation:
 node --version
 npm --version
 ```
-
-> **[Add Screenshot Here]**
+<img width="1919" height="94" alt="image" src="https://github.com/user-attachments/assets/4fd805fb-d3f7-4d06-a64d-ff8cd714bba9" />
 
 ---
 
@@ -165,25 +172,26 @@ npm --version
 ```bash
 git clone https://github.com/OT-MICROSERVICES/frontend.git
 ```
+<img width="1919" height="183" alt="image" src="https://github.com/user-attachments/assets/6133f09d-6e1d-4772-abfd-85a63aa660a4" />
 
-> **[Add Screenshot Here]**
 
 ```bash
 cd frontend
 ls -la
 ```
+<img width="1919" height="334" alt="image" src="https://github.com/user-attachments/assets/7eefe481-29c6-4918-8092-68f32b2cc381" />
 
-> **[Add Screenshot Here]**
 
 ---
 
 ### Step 5: Install Node Dependencies
 
 ```bash
-npm install
+make install
 ```
 
-> **[Add Screenshot Here]**
+<img width="1919" height="466" alt="image" src="https://github.com/user-attachments/assets/75900a56-bdd5-48e2-a12d-2f287aa60e38" />
+
 
 ---
 
@@ -193,13 +201,15 @@ npm install
 npm run build
 ```
 
-> **[Add Screenshot Here — should show "Compiled successfully"]**
+<img width="1919" height="488" alt="image" src="https://github.com/user-attachments/assets/23e37ba3-8af1-4f47-a7a6-7beca98e8a59" />
+<img width="1919" height="528" alt="image" src="https://github.com/user-attachments/assets/9bcbf12a-ac4a-4ff2-bc69-4e65da983e45" />
+
 
 ```bash
 ls -la build/
 ```
+<img width="1919" height="203" alt="image" src="https://github.com/user-attachments/assets/bf01a900-aafd-40e4-a226-45c2de371505" />
 
-> **[Add Screenshot Here]**
 
 ---
 
@@ -209,13 +219,14 @@ ls -la build/
 sudo apt install nginx -y
 ```
 
-> **[Add Screenshot Here]**
+<img width="1919" height="928" alt="image" src="https://github.com/user-attachments/assets/bd753717-c081-44a5-9f19-12528c1440dc" />
+
 
 ```bash
 nginx -v
 ```
+<img width="1919" height="48" alt="image" src="https://github.com/user-attachments/assets/1933ec36-9fed-4b31-93db-8bf5b17cc7ef" />
 
-> **[Add Screenshot Here]**
 
 ---
 
@@ -224,8 +235,8 @@ nginx -v
 ```bash
 sudo cp -r build/* /var/www/html/
 ```
+<img width="1919" height="68" alt="image" src="https://github.com/user-attachments/assets/4b0481a8-0b62-4a8b-a4a4-ade34c02543d" />
 
-> **[Add Screenshot Here]**
 
 ---
 
@@ -249,9 +260,6 @@ server {
     }
 }
 ```
-
-> **[Add Screenshot Here]**
-
 ---
 
 ### Step 10: Test and Restart Nginx
@@ -259,16 +267,16 @@ server {
 ```bash
 sudo nginx -t
 ```
+<img width="1919" height="91" alt="image" src="https://github.com/user-attachments/assets/46cfa3f7-6a6e-4c75-9473-5e8b406a725d" />
 
-> **[Add Screenshot Here — should show "syntax is ok" and "test is successful"]**
 
 ```bash
 sudo systemctl restart nginx
 sudo systemctl enable nginx
 sudo systemctl status nginx
 ```
+<img width="1919" height="403" alt="image" src="https://github.com/user-attachments/assets/0f9352f6-bab6-42b1-bfa3-2f04ee118d92" />
 
-> **[Add Screenshot Here — should show "active (running)"]**
 
 ---
 
@@ -279,8 +287,8 @@ Open the browser and go to:
 ```
 http://<your-server-ip>
 ```
+<img width="1919" height="1011" alt="Screenshot from 2026-04-21 20-27-37" src="https://github.com/user-attachments/assets/8b864bd2-bc43-4d3e-a013-4c8a3b4cbdae" />
 
-> **[Add Screenshot Here — Frontend UI loaded in browser]**
 
 ---
 
@@ -333,8 +341,8 @@ This sets the Node.js max memory to 4 GB and enables legacy OpenSSL support need
 ### Issue 5: Node.js or npm Version Mismatch
 
 ```bash
-node --version    # Should be v18.x
-npm --version     # Should be v9.x
+node --version    # Should be v18.20.8
+npm --version     # Should be v10.8.2
 ```
 #### If version is wrong, reinstall using the nodesource setup script from Step 3
 
